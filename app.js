@@ -16,7 +16,7 @@ const oshuruvchi = (obj) => {
 
 // 2. argument sifatida berilgan string da nechta so’zda a harfi ishtirok etganini aniqlaydigan function tuzing
 
-let string = "men dasturlashni o’rganishni istayman lekin vaqti yo'q";
+let string = "men dasturlashni o’rganishni istayman lekin vaqtim yo'q";
 
 const aniqlaydigan = (string) => {
   let strCount = 0;
@@ -94,7 +94,7 @@ let new_animals = animals.reduce((net, item) => {
   }
   return net;
 }, {});
-console.log(new_animals);
+// console.log(new_animals);
 
 // 6. Arraydagi eng yosh va eng qarilarni topib, ularni yoshlarini farqini toping. (sort).
 // Input: [
@@ -115,7 +115,7 @@ let people = [
 ];
 
 let yo = people.sort((a, b) => a.age - b.age);
-console.log(yo[yo.length - 1].age - yo[0].age);
+// console.log(yo[yo.length - 1].age - yo[0].age);
 
 // 7. Array truthy va falsy elementlardan tuzilgan. O’sha arraydagi truthy va falsy elementlarni alohida arraylarga ajratib object qilib qaytaruvchi **getTruthyFalsy** funksiya tuzing. (filter)
 // Input: [false, 1, 10, "", null, "sultonqul", 1.13, 0]
@@ -135,7 +135,7 @@ const getTruthyFalsy = (array) => {
   });
   return { truthy, falsy };
 };
-console.log(getTruthyFalsy(array));
+// console.log(getTruthyFalsy(array));
 
 // 8. Gapdagi eng uzun va eng qisqa so’zlarni aniqlab {minWord: “…”, maxWord: “….”} qiymat qaytaruvchi minManWord() nomli function yarating
 // Input: “Men dasturlash kursida o’qiyman”
@@ -157,4 +157,4 @@ const minManWord = (iM) => {
   });
   return { minWord: min, maxWord: max };
 };
-console.log(minManWord(iM));
+// console.log(minManWord(iM));
